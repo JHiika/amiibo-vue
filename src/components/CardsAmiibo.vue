@@ -1,5 +1,5 @@
 <template>
-        <div class="col-4 col-12-medium">
+        <div class="col-4 col-12-medium" @click="goToAmiiboDetails(amiibos.tail)">
             <section class="middle">
                 <img
                     :src="amiibo.image" style="height:350px"/>
@@ -37,7 +37,10 @@
           // Je récupère les datas de la recherche
             console.log(thisAmiibo.data);
             // this.amiibo=thisAmiibo.data.amiibo[0];    
-        }
+        },
+        goToAmiiboDetails(amiiboTail){
+            this.$router.push({name:'amiiboDetails', params:{amiiboTail:amiiboTail}});
+        },
       }
     }
     </script>
