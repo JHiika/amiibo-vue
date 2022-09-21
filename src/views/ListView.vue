@@ -4,7 +4,7 @@
 
             <header>
                 <h2>Ma Collection</h2>
-                <p>(ici le nombre d'amiibo)</p>
+                <p>Compteur</p>
             </header>
             <p>
             <table>
