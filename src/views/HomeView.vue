@@ -2,9 +2,9 @@
   <div class="home">
     <section id="intro" class="container">
         <div class="row">
-          <CardsAmiibo />
-          <CardsAmiibo />
-          <CardsAmiibo />
+          <CardsAmiibo :amiibo="amiibos[0]"/>
+          <CardsAmiibo :amiibo="amiibos[15]"/>
+          <CardsAmiibo :amiibo="amiibos[65]"/>
         </div>
         <footer>
 					<ul class="actions">
@@ -35,7 +35,7 @@ export default {
     async getAmiibo() {
       let rep = await axios.get(API_AMIIBO_URL);
       this.amiibos = rep.data.amiibo;
-      console.log(this.amiibos);
+      // console.log(this.amiibos);
     },
   },
   async created() {
