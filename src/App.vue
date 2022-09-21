@@ -11,7 +11,6 @@
 
 <script>
   import './assets/css/main.css';
-  // import './assets/css/fontawesome-all.min.css';
   import NavBar from '@/components/NavBar.vue';
   import FooterComp from '@/components/FooterComp.vue';
 

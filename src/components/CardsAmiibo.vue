@@ -10,3 +10,23 @@
             </section>
         </div>
 </template>
+
+<script>
+    
+    export default {
+      name: 'CardsAmiibo',
+      data:()=>({
+        amiibos:{},
+      }),
+      props:{
+        amiibo:{
+            type: Object,
+        }
+      },
+      methods:{
+        goToAmiiboDetails(amiiboId){
+            this.$router.push({name:'amiiboDetails', params:{amiiboId:amiiboId}});
+        }
+      }
+    }
+    </script>
